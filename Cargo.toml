@@ -38,7 +38,8 @@ external-symbols = ["secp256k1-sys/external-symbols"]
 fuzztarget = ["secp256k1-sys/fuzztarget"]
 
 [dependencies]
-secp256k1-sys = { version = "0.1.1", default-features = false, path = "./secp256k1-sys" }
+#secp256k1-sys = { version = "0.1.1", default-features = false, path = "./secp256k1-sys" }
+secp256k1-sys = { git = "https://github.com/enigmampc/rust-secp256k1/", branch = "remove-cc-version-limit", default-features = false }
 
 [dev-dependencies]
 rand = "0.6"
