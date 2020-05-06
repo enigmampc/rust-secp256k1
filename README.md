@@ -2,6 +2,15 @@
 
 [Full documentation](https://docs.rs/secp256k1/)
 
+---
+
+### Note about the EnigmaMPC fork of this repo
+
+This fork only removes the restriction on the version range of the `cc` dependency of `secp256k1-sys`.
+In the future we will only pull in commits from upstream and change the dependency specification of `secp256k1` to point at this forked version of `secp256k1-sys`.
+
+---
+
 ### rust-secp256k1
 
 `rust-secp256k1` is a wrapper around ![libsecp256k1](https://github.com/bitcoin-core/secp256k1),
